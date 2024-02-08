@@ -3,15 +3,20 @@
 
 class Triangle {
 
+	private:
+	int sides[3];
+	// int side2;
+	// int side3;
+
 	public:
-	int side1;
-	int side2;
-	int side3;
+	int getSide1() { return sides[0]; }
+	int getSide2() { return sides[1]; }
+	int getSide3() { return sides[2]; }
 
 	Triangle(int s1, int s2, int s3) {
-		side1 = s1;
-		side2 = s2;
-		side3 = s3;
+		sides[0] = s1;
+		sides[1] = s2;
+		sides[2] = s3;
 	}
 
 };
