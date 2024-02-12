@@ -7,17 +7,22 @@ using namespace std;
 
 int main(){
 
-	double area = triangleArea(Triangle(10,10,10));
+	double area = Triangle(10,10,10).getArea();
 	cout << "The area of 10x10x10 triangle is: " << area << "\n";
 
-	area = triangleArea(Triangle(5,5,5));
+	area = Triangle(5,5,5).getArea();
 	cout << "The area of 5x5x5 triangle is: " << area << "\n";
 
-	area = triangleArea(Triangle(5,10,100));
+	area = Triangle(5,10,100).getArea();
 	cout << "The area of 5x10x10 triangle is: " << area << "\n";
 
 	Triangle t1(10,10,10);
 	Triangle t2(20,20,20);
+
+	cout << t1.getArea() << endl;
+
+	cout << t1.getArea() << endl;
+	cout << t2.getArea() << endl;
 
 	Triangle t3;
 

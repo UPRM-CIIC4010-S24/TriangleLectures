@@ -26,12 +26,13 @@ class Triangle {
 		sides[2] = 0;
 
 	}
-	
+
+    double getArea();
 
 };
 
 
-double triangleArea(Triangle t);
+// double triangleArea(Triangle t);
 
 bool largerThan(Triangle t1, Triangle t2);
 
