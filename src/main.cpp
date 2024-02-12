@@ -19,6 +19,8 @@ int main(){
 	Triangle t1(10,10,10);
 	Triangle t2(20,20,20);
 
+	Triangle t3;
+
 	if (largerThan(t1,t2)) {
 		cout << "First triangle is larger" << endl;
 	} else {

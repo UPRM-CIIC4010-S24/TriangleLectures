@@ -19,6 +19,15 @@ class Triangle {
 		sides[2] = s3;
 	}
 
+	Triangle() {
+
+		sides[0] = 0;
+		sides[1] = 0;
+		sides[2] = 0;
+
+	}
+	
+
 };
 
 
