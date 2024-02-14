@@ -26,7 +26,7 @@ int main(){
 
 	Triangle t3;
 
-	if (largerThan(t1,t2)) {
+	if (t1.largerThan(t2)) {
 		cout << "First triangle is larger" << endl;
 	} else {
 		cout << "First triangle is NOT larger" << endl;

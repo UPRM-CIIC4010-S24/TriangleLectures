@@ -15,9 +15,9 @@ double Triangle::getArea() {
         return area;
 }
 
-bool largerThan(Triangle t1, Triangle t2) {
+bool Triangle::largerThan(Triangle t2) {
 
-	return (t1.getArea() > t2.getArea());
+	return (this->getArea() > t2.getArea());
 
 }
 

@@ -28,13 +28,12 @@ class Triangle {
 	}
 
     double getArea();
+	bool largerThan(Triangle t2);
 
 };
 
 
 // double triangleArea(Triangle t);
-
-bool largerThan(Triangle t1, Triangle t2);
 
 double sumAreas(Triangle triangles[], int size);
 
