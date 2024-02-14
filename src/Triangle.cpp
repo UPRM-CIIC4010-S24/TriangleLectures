@@ -21,7 +21,7 @@ bool Triangle::largerThan(Triangle t2) {
 
 }
 
-double sumAreas(Triangle triangles[], int size) {
+double Triangle::sumAreas(Triangle triangles[], int size) {
 
 	double result = 0.0;
 
@@ -33,7 +33,7 @@ double sumAreas(Triangle triangles[], int size) {
 
 }
 
-Triangle findLargest(Triangle triangles[], int size) {
+Triangle Triangle::findLargest(Triangle triangles[], int size) {
 
 	Triangle largestTriangle = triangles[0];
 	for (int i=1; i<size; i++) {
