@@ -1,6 +1,7 @@
 #include <math.h>
 #include <iostream>
 #include <string>
+#include <vector>
 #include "include/Triangle.h"
 
 using namespace std;
@@ -33,9 +34,17 @@ int main(){
 		cout << "First triangle is NOT larger" << endl;
 	}
 
-	Triangle tArray[3] {t1,t2,t3};
+	t1.scale(2);
 
-	cout << "The sum of the areas is: " << Triangle::sumAreas(tArray, 3) << endl;
+	t1.scale(0.5);
+
+	// Triangle tArray[3] {t1,t2,t3};
+
+	vector<Triangle> tVector {t1,t2,t3};
+
+	cout << "The sum of the areas is: " << Triangle::sumAreas(vector<Triangle> {t1,t2}) << endl;
+
+	Triangle::scale(tVector,2);
 
 	exit(0);
 
