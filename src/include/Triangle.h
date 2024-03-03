@@ -32,6 +32,8 @@ class Triangle {
     double getArea() const;
 	bool largerThan(Triangle t2);
 	void scale(double factor);
+	void scale(double foo);
+	void scale();
 
 	static double sumAreas(const vector<Triangle> &triangles);
 	static Triangle findLargest(Triangle triangles[], int size);

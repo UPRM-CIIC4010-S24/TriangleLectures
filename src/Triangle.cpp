@@ -23,6 +23,21 @@ void Triangle::scale(double factor) {
 
 }
 
+void Triangle::scale(double foo) {
+
+	sides[0] *= foo;
+	sides[1] *= foo;
+	sides[2] *= foo;
+
+}
+
+void Triangle::scale() {
+	// Default factor to 2
+
+	this->scale(2);
+
+}
+
 bool Triangle::largerThan(Triangle t2) {
 
 	return (this->getArea() > t2.getArea());
